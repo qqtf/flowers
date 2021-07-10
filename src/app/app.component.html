@@ -1,10 +1,16 @@
-<div>
-  <ul>
-    <li><a [routerlink]="['/sunflower']">sunflower</a></li>
-    <li><a [routerlink]="['/roses']">roses</a></li>
-  </ul>
-</div>
+<header>
+  <nav >
+    <div >
+      <span>
+        
+        <a (click)="gotoSunflower()">sunflower</a>
+      </span><span>
+  <a (click)="gotoRoses()">roses</a>
+</span>
+    </div>
+    </nav>
+  </header>
 
-<div>
-  <router-outlet></router-outlet>
-</div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
